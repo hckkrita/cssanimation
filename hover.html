@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, html {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+        .btn-hover {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease; /* Smooth transition for all properties */
+        }
+        .btn-hover:hover {
+            background-color: #0056b3;
+            transform: scale(1.1); /* Grow slightly */
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+        }
+    </style>
+</head>
+<body>
+    <button class="btn-hover">Hover me!</button>
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, html {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+        .main-div{
+            display: flex;
+        }
+        .btn-hover {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease; 
+        }
+        .btn-hover:hover {
+            background-color: #0056b3;
+            transform: scale(1.1); 
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+        }
+        .circle {
+            width: 100px;
+            height: 100px;
+            background-color: #007bff;
+            border-radius: 50%;
+            animation: pulsate 2s infinite ease-in-out;
+            margin: 50px auto;
+        }
+
+        @keyframes pulsate {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.5);
+            }
+        }
+        .container {
+            width: 100px;
+            height: 200px;
+            border: 1px solid #ccc;
+            position: relative;
+            overflow: hidden;
+            margin: 50px auto;
+        }
+
+        .ball {
+            width: 50px;
+            height: 50px;
+            background-color: #007bff;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: bounce 2s infinite ease-in-out;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                top: 0;
+            }
+            50% {
+                top: 150px;
+            }
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .gallery img {
+            width: 200px;
+            height: 150px;
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+        .marquee {
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            box-sizing: border-box;
+        }
+
+        .marquee span {
+            display: inline-block;
+            padding-left: 100%;
+            animation: marquee 10s linear infinite;
+        }
+
+        @keyframes marquee {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #007bff;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 50px auto;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main-div">
+        <button class="btn-hover">Hover me!</button>
+
+    <div class="circle"></div>
+
+    <div class="container">
+        <div class="ball"></div>
+    </div>
+
+    <div class="gallery">
+        <img src="https://i.pinimg.com/564x/f8/0b/6e/f80b6e2ae3dcf441ff54f489998e26fb.jpg" alt="Image 1" style="animation-delay: 0s;">
+        <img src="https://i.pinimg.com/564x/c8/95/3a/c8953a496654888d868616c12cd2b0aa.jpg" alt="Image 2" style="animation-delay: 0.5s;">
+        <img src="https://i.pinimg.com/564x/1b/5a/70/1b5a70a5110fd0eba7e3adb94dc9ec96.jpg" alt="Image 3" style="animation-delay: 1s;">
+        <img src="https://i.pinimg.com/564x/5a/52/11/5a5211d54462163cb36401211c08cce1.jpg" alt="Image 4" style="animation-delay: 1.5s;">
+    </div>
+
+    <div class="marquee">
+        <span>This is a continuously sliding text marquee.</span>
+    </div>
+
+    <div class="spinner"></div>
+    
+
+    </div>
+</body>
+</html>
